@@ -54,7 +54,7 @@ else
 	base=$(basename $url)
 	basename=${base/\?dl=0/}
 	echo "Downloading file $base"
-	"wget $url"
+	wget $url
 	mv $base $basename
     done
 fi
