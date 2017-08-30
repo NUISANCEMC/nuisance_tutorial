@@ -25,7 +25,7 @@ fi
 if [[ "$FILES" == "gntp.ValenciaQEBergerSehgalCOHRES.MINERvA_fhc_numu" || "$FILES" == "ALL" ]]
 then
     echo "Wanted File : gntp.ValenciaQEBergerSehgalCOHRES.MINERvA_fhc_numu.CH.2500000.root"
-    URLS="$URLS https://www.dropbox.com/s/f60qr70y6ipstrz/gntp.Default.MiniBooNE_fhc_numu.CH2.2500000.root?dl=0"
+    URLS="$URLS https://www.dropbox.com/s/chfnqf0xhbfl1hd/gntp.ValenciaQEBergerSehgalCOHRES.MINERvA_fhc_numu.CH.2500000.root?dl=0"
 else
     ALLOWED="$ALLOWED gntp.ValenciaQEBergerSehgalCOHRES.MINERvA_fhc_numu"
 fi

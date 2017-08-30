@@ -1,0 +1,7 @@
+<nuisance>
+  <!-- PARAMETER LIST -->
+  <parameter name="MaCCRES" type="genie_parameter" nominal="-1.0" />
+  <!-- SAMPLE LIST -->
+  <sample name="MINERvA_CC1pip_XSec_1Dth_nu"  input="GENIE:mcfiles/gntp.Default.MINERvA_fhc_numu.CH.2500000.root" />
+  <sample name="MINERvA_CC1pip_XSec_1DTpi_nu" input="GENIE:mcfiles/gntp.Default.MINERvA_fhc_numu.CH.2500000.root" />
+</nuisance>

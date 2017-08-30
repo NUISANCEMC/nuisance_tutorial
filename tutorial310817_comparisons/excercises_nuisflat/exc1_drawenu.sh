@@ -7,3 +7,4 @@ nuisflat \
     -f GenericFlux \
     -n 50000
 
+root exc1_drawenu.C
