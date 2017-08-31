@@ -1,0 +1,9 @@
+<nuisance>
+  <!-- Parameter List -->
+  <parameter name="MaCCRES" type="genie_parameter" nominal="0.0"
+	     low="-3.0" high="3.0" step="1.0" state="FREE"/>
+  <!-- Covar List -->
+  <covar name="MaPull" input="DIAL:MaCCRES;0.0;0.3" type="GAUSPULL" />
+  <!-- SAMPLE LIST -->
+  <sample name="MINERvA_CC1pip_XSec_1DQ2_nu_2017" input="GENIE:mcfiles/gntp.Default.MINERvA_fhc_numu.CH.2500000.root" />
+</nuisance>

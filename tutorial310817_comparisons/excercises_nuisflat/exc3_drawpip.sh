@@ -1,4 +1,5 @@
 #!/bin/sh
+ln -sf ../../mcfiles/
 
 # Run Nuisflat
 nuisflat \

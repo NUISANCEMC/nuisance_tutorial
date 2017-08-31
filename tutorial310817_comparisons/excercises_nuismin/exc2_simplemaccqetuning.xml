@@ -1,0 +1,7 @@
+<nuisance>
+  <!-- Parameter List -->
+  <parameter name="MaCCQE" type="genie_parameter" nominal="0.0"
+	     low="-3.0" high="3.0" step="1.0" state="FREE"/>
+  <!-- SAMPLE LIST -->
+  <sample name="MiniBooNE_CCQE_XSec_1DQ2_nu" input="GENIE:mcfiles/gntp.Default.MiniBooNE_fhc_numu.CH2.2500000.root" type="FREE" />
+</nuisance>
