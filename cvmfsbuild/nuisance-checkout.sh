@@ -1,6 +1,6 @@
 git clone http://nuisance.hepforge.org/git/nuisance.git 
 cd nuisance
-git checkout v2r6 -b v2r6
+git checkout v2r8 -b v2r8
 mkdir builds
 cd builds
 mkdir genie2126-nuwrorw
