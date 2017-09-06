@@ -35,3 +35,7 @@ export NUWRO_INC=$NUWRO/build/Linux/include/
 export PATH=$NUWRO/build/Linux/bin:${PATH}
 export LD_LIBRARY_PATH=$NUWRO/build/Linux/lib:${LD_LIBRARY_PATH}
 export NUISANCE_BUILD_FLAGS="$NUISANCE_BUILD_FLAGS -DUSE_NuWro=1 -DUSE_NuWro_RW=1"
+
+export GPRD=/grid/fermiapp/products/genie
+source ${GPRD}/bootstrap_genie_ups.sh
+setup cmake
