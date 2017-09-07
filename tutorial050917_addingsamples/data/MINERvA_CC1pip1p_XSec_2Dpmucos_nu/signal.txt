@@ -1,0 +1,27 @@
+# Signal Definition is numuCC1pi1p
+
+# Cut 1 : Initial State Muon Neutrino
+# Cut 2 : Final State Muon (Charged Current Event)
+# Cut 3 : Final State pi+ or pi- (only one charged pion)
+# Cut 4 : At least one final state proton
+# Cut 5 : Muon-Neutrino Theta Angle < 20degrees
+# Cut 6 : WEXP < 1.8 GeV (see equation 1 for W Exp)
+
+Equation 1:
+WEXP Calculation
+
+     // Given LorentzVectors in MeV units for intial neutrino (pnu) and final state muon (pmu)
+     double E_mu = pmu.E();
+     double p_mu = pmu.Vect().Mag();
+     double m_mu = sqrt(E_mu * E_mu - p_mu * p_mu);
+
+     double E_nu = pnu.E();
+
+     double th_nu_mu = pnu.Vect().Angle(pmu.Vect());
+
+     double m_p =  938.27203; // GeV 
+
+     double WEXP = sqrt(m_p * m_p + m_mu * m_mu - 2 * m_p * E_mu +
+     	                      2 * E_nu * (m_p - E_mu + p_mu * cos(th_nu_mu)));
+
+
