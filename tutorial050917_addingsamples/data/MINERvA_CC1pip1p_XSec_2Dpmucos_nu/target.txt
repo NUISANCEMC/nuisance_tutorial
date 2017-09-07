@@ -1,1 +1,0 @@
-To compare to this data you should generate events on a CH target.

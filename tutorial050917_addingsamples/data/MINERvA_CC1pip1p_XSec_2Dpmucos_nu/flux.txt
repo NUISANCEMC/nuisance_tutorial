@@ -1,2 +1,0 @@
-To generate events for this data you should use the MINERvA forward horn current numu flux
-In the included ROOT file 'minerva_flux.root', this is the TH1D called "numu_fhc"
