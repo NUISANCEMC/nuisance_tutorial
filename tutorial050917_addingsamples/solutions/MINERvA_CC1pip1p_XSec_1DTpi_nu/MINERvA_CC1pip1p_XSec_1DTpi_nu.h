@@ -16,20 +16,22 @@
 *    You should have received a copy of the GNU General Public License
 *    along with NUISANCE.  If not, see <http://www.gnu.org/licenses/>.
 *******************************************************************************/
-#ifndef MINERVA_CC1PIP1P_XSEC_1DTPI_NU_H_SEEN
-#define MINERVA_CC1PIP1P_XSEC_1DTPI_NU_H_SEEN
+#ifndef MINERvA_CC1pip1p_XSec_1DTpi_nu_H_SEEN
+#define MINERvA_CC1pip1p_XSec_1DTpi_nu_H_SEEN
 #include "Measurement1D.h"
 
 class MINERvA_CC1pip1p_XSec_1DTpi_nu : public Measurement1D {
 public:
 
-  // Main Constructor
+  // Main Constructor where we define what data we need to setup
+  // and sort out scaling factors.
   MINERvA_CC1pip1p_XSec_1DTpi_nu(nuiskey samplekey);
 
   // Destructor
   virtual ~MINERvA_CC1pip1p_XSec_1DTpi_nu() {};
 
-  // Function to calculate event kinematics we need
+  // Function to calculate event kinematics we need when binning.
+  // Called for ALL events
   void FillEventVariables(FitEvent *event);
 
   // Function to figure out whether an event
@@ -39,7 +41,8 @@ public:
   private:
 
   // If you would like to include any extra objects
-  // or histograms to process include them here.
+  // or histograms to process include them here as 
+  // objects of the specific measurement sample itself.
 
 };
 #endif
